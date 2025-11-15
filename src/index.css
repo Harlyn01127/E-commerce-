@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --coral: #ff6b6b;
+  --fruity-yellow: #ffd449;
+}
+
+html,body,#root{
+  height:100%;
+}
+
+body{
+  @apply bg-coral font-sans text-white;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.app-shell{
+  width:375px;
+  height:812px;
+  margin:24px auto;
+  border-radius:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.25);
+  overflow:hidden;
+  background:linear-gradient(180deg, rgba(255,107,107,1) 0%, rgba(255,122,107,0.98) 100%);
+}
+
+.card-bg{
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.92));
+  border-radius:12px;
+}
+
+.small-muted{opacity:0.9;color: rgba(255,255,255,0.95);}
